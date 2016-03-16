@@ -1,4 +1,4 @@
-# imagemagickcheck
+# Image Library Check
 
 A quick script to verify that the ImageMagick library and ImageMagick php extension is installed on host server.
 
