@@ -15,9 +15,9 @@ class ImageCheck {
     //Checking for GD library and extension.
     function gd_check(){
         if(extension_loaded('gd')){
-            echo 'GD extension and library installed<span style="background-color:50f524; margin-left:3px; padding:3px">YES</span><br /><br />';
+            echo 'GD extension and library installed? <span style="background-color:50f524; margin-left:3px; padding:3px">YES</span><br /><br />';
         } else {
-            echo 'GD extension and library not installed<span style="background-color:fe0101; margin-left:3px; padding:3px">NO</span><br /><br />';
+            echo 'GD extension and library installed? <span style="background-color:fe0101; margin-left:3px; padding:3px">NO</span><br /><br />';
         }
     }
     
@@ -25,9 +25,9 @@ class ImageCheck {
     function imagick_ext_check(){
         
         if(extension_loaded('imagick')){
-            echo 'ImageMagick PHP extension (imagick.so) loaded<span style="background-color:50f524; margin-left:3px; padding:3px">YES</span><br /><br />';
+            echo 'ImageMagick PHP extension (imagick.so) loaded? <span style="background-color:50f524; margin-left:3px; padding:3px">YES</span><br /><br />';
         } else {
-            echo 'ImageMagick PHP extension (imagick.so) not loaded<span style="background-color:fe0101; margin-left:3px; padding:3px">NO</span><br /><br />';
+            echo 'ImageMagick PHP extension (imagick.so) loaded? <span style="background-color:fe0101; margin-left:3px; padding:3px">NO</span><br /><br />';
         }
         
     }
@@ -48,10 +48,10 @@ class ImageCheck {
           $code = $rcode;
           
           if($code == 0){
-              echo 'ImageMagick Library installed<span style="background-color:50f524; margin-left:3px; padding:3px">YES</span><br /><br />';
+              echo 'ImageMagick Library installed? <span style="background-color:50f524; margin-left:3px; padding:3px">YES</span><br /><br />';
               echo alist($out);
           } else {
-              echo 'ImageMagick Library not installed<span style="background-color:fe0101; margin-left:3px; padding:3px">NO</span><br /><br />';
+              echo 'ImageMagick Library installed? <span style="background-color:fe0101; margin-left:3px; padding:3px">NO</span><br /><br />';
           }
           //Print the return code: 0 if OK, nonzero if error. 
           //return "Version return code is $rcode <br>";
